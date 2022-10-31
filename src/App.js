@@ -26,6 +26,10 @@ function App() {
    })
    setItems(newItems);
   }
+
+  const clearTask = ()=>{
+    setItems([])
+  }
   return (
     <div className="container-fluid my-5">
       <div className=" row">
@@ -40,8 +44,8 @@ function App() {
           <button type="button" className="btn btn-success border fs-2 px-4"  onClick={handleAdd}> + </button>
         </div>
         </div>
-        
       </div>
+
         <div className="row mx-auto p-2 my-2 ">
         <h3 className="mt-3 mx-auto">My Tasks:</h3> 
         <ul className="list-unstyled row">
@@ -49,6 +53,11 @@ function App() {
           return <Task key={i} value={value} id={i} deleteTask={handleDelete}/>
         })}
         </ul>
+     { items.length>0  && 
+        <div className="row justify-content-end">
+           <button className=" col-2 col-sm-2 me-5 py-2 btn btn-warning flot-right" onClick={clearTask}>Clear</button>
+        </div>}
+
        </div>
     </div>
     </div>

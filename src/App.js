@@ -28,9 +28,9 @@ function App() {
   }
   return (
     <div className="container-fluid my-5">
-      <div className=" row  ">
+      <div className=" row">
         <div className="col-6 col-sm-6 mx-auto shadow-lg todocard">
-      <h2 className="text-center">Brijisha's Todo Application</h2>
+      <h2 className="text-center my-2">Brijisha's Todo Application</h2>
      <div className="container">
        <div className="row pt-3 mx-auto ">
         <div className="col-9 col-sm-9">
